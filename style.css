@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: white;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 70px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #2563eb;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background: #eff6ff;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.tag {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2563eb;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+}
+
+.hero h2 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+}
+
+.hero p {
+    max-width: 650px;
+
+    color: #6b7280;
+
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 7px;
+
+    border: 1px solid #2563eb;
+
+    text-decoration: none;
+
+    color: #2563eb;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.btn.primary {
+    color: white;
+    background: #2563eb;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    padding: 90px 8%;
+}
+
+.gray {
+    background: #f9fafb;
+}
+
+.section-title {
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.section-title p {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+
+    margin-bottom: 12px;
+
+    color: #111827;
+}
+
+.section-title span {
+    color: #6b7280;
+}
+
+
+/* =========================
+   STEPS
+========================= */
+
+.steps {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.step {
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    background: white;
+}
+
+.step-number {
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   BOOK
+========================= */
+
+.book-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.book-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.book-cover {
+    height: 180px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 70px;
+
+    background: #dbeafe;
+}
+
+.book-info {
+    padding: 25px;
+}
+
+.book-info h3 {
+    margin-bottom: 5px;
+}
+
+.author {
+    color: #2563eb;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.book-info p {
+    color: #6b7280;
+}
+
+.rating {
+    margin-top: 15px;
+
+    color: #f59e0b;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+#bookForm {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2563eb;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   SUCCESS
+========================= */
+
+.success-message {
+    display: none;
+
+    max-width: 500px;
+
+    margin: 30px auto;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+}
+
+.success-icon {
+    width: 50px;
+    height: 50px;
+
+    margin: auto auto 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   RESEARCH
+========================= */
+
+.research {
+    background: #f9fafb;
+}
+
+.statistics {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.stat-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    padding: 35px;
+
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+
+    font-size: 44px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+.stat-card p {
+    color: #6b7280;
+}
+
+.research-box {
+    max-width: 850px;
+
+    margin: 50px auto 0;
+
+    padding: 30px;
+
+    background: white;
+
+    border-left: 4px solid #2563eb;
+}
+
+.research-box h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 45px 8%;
+
+    text-align: center;
+
+    border-top: 1px solid #e5e7eb;
+
+    color: #6b7280;
+}
+
+.footer-logo {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 10px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 65px 6%;
+    }
+
+    .steps,
+    .book-grid,
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+}

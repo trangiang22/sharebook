@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Share Book - Chia sẻ để cùng đọc</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <header>
+        <div class="logo">
+            <span> 
+                <img src="https://victoryschool.edu.vn/wp-content/uploads/2023/12/logo2.png" alt="Logo" height="30">
+            </span>
+            Share Book
+        </div>
+
+        <nav>
+            <a href="#home">Trang chủ</a>
+            <a href="#books">Thư viện</a>
+            <a href="#join">Tham gia</a>
+            <a href="#research">Kết quả nghiên cứu</a>
+        </nav>
+    </header>
+
+
+    <!-- TRANG CHỦ -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tag">SẢN PHẨM NGHIÊN CỨU KHOA HỌC</p>
+
+            <h1>
+                SHARE BOOK
+            </h1>
+
+            <h2>
+                Chia sẻ sách – Kết nối người đọc
+            </h2>
+
+            <p>
+                Một không gian giúp học sinh chia sẻ những cuốn sách
+                yêu thích, khám phá sách mới và hình thành thói quen đọc sách.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#books" class="btn primary">
+                    Khám phá sách
+                </a>
+
+                <a href="#join" class="btn">
+                    Tham gia
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GIỚI THIỆU -->
+    <section class="section">
+
+        <div class="section-title">
+            <p>VỀ DỰ ÁN</p>
+            <h2>Share Book hoạt động như thế nào?</h2>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3>Chia sẻ</h3>
+                <p>
+                    Người tham gia giới thiệu những cuốn sách
+                    mà mình có hoặc yêu thích.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3>Khám phá</h3>
+                <p>
+                    Người đọc tìm kiếm và khám phá những cuốn sách
+                    được cộng đồng chia sẻ và giới thiệu.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3>Kết nối</h3>
+                <p>
+                    Cùng trao đổi cảm nhận và xây dựng
+                    văn hóa đọc trong nhà trường.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- THƯ VIỆN -->
+    <section id="books" class="section gray">
+
+        <div class="section-title">
+            <p>THƯ VIỆN</p>
+            <h2>Một số cuốn sách được chia sẻ</h2>
+        </div>
+
+        <div class="book-grid">
+
+            <div class="book-card">
+
+                <div class="book-cover">
+                    📖
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Dế Mèn phiêu lưu ký</h3>
+
+                    <p class="author">
+                        Tô Hoài
+                    </p>
+
+                    <p>
+                        Một hành trình khám phá thế giới
+                        đầy thú vị của chú Dế Mèn.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="book-card">
+
+                <div class="book-cover">
+                    📕
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Harry Potter</h3>
+
+                    <p class="author">
+                        J. K. Rowling
+                    </p>
+
+                    <p>
+                        Câu chuyện về tình bạn, lòng dũng cảm
+                        và thế giới phép thuật.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="book-card">
+
+                <div class="book-cover">
+                    📗
+                </div>
+
+                <div class="book-info">
+
+                    <h3>Cho tôi xin một vé đi tuổi thơ</h3>
+
+                    <p class="author">
+                        Nguyễn Nhật Ánh
+                    </p>
+
+                    <p>
+                        Những câu chuyện gần gũi về tuổi thơ
+                        và những kỷ niệm đáng nhớ.
+                    </p>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- THAM GIA -->
+    <section id="join" class="section">
+
+        <div class="section-title">
+            <p>THAM GIA SHARE BOOK</p>
+
+            <h2>Chia sẻ cuốn sách của bạn</h2>
+
+            <span>
+                Hãy giới thiệu một cuốn sách mà bạn muốn
+                chia sẻ với mọi người.
+            </span>
+        </div>
+
+
+        <form id="bookForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>Họ và tên</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Nhập họ và tên"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Lớp</label>
+
+                    <input
+                        type="text"
+                        id="className"
+                        placeholder="Ví dụ: 6G1"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Tên sách</label>
+
+                <input
+                    type="text"
+                    id="bookName"
+                    placeholder="Nhập tên sách"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Tác giả</label>
+
+                <input
+                    type="text"
+                    id="author"
+                    placeholder="Nhập tên tác giả"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>Mô tả</label>
+
+                <textarea
+                    id="comment"
+                    rows="5"
+                    placeholder="Nội dung sách nói về chủ đề gì?"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="btn primary">
+                Gửi chia sẻ
+            </button>
+
+        </form>
+
+
+        <div id="successMessage" class="success-message">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h3>Chia sẻ thành công!</h3>
+
+            <p>
+                Cảm ơn bạn đã tham gia Share Book.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- KẾT QUẢ NGHIÊN CỨU -->
+    <section id="research" class="section research">
+
+        <div class="section-title">
+
+            <p>KẾT QUẢ NGHIÊN CỨU</p>
+
+            <h2>Share Book qua những con số</h2>
+
+        </div>
+
+
+        <div class="statistics">
+
+            <div class="stat-card">
+
+                <span class="stat-number" id="participants">
+                    0
+                </span>
+
+                <p>
+                    Người tham gia
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-number" id="books">
+                    0
+                </span>
+
+                <p>
+                    Cuốn sách được chia sẻ
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-number" id="reviews">
+                    0
+                </span>
+
+                <p>
+                    Lượt chia sẻ
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="research-box">
+
+            <h3>Mục tiêu của nghiên cứu</h3>
+
+            <p>
+                Tìm hiểu khả năng ứng dụng một nền tảng trực tuyến
+                trong việc khuyến khích học sinh chia sẻ sách,
+                khám phá sách mới và hình thành thói quen đọc sách.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            📚 Share Book
+        </div>
+
+        <p>
+            Sản phẩm nghiên cứu khoa học cấp trường
+        </p>
+
+        <p class="copyright">
+            © 2026 Share Book
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCgAls8WH0N2ll5KaiLPCUXpVnfiM6vRPI",
+    authDomain: "share-2bca9.firebaseapp.com",
+    projectId: "share-2bca9",
+    storageBucket: "share-2bca9.firebasestorage.app",
+    messagingSenderId: "766590928427",
+    appId: "1:766590928427:web:0ebc0b66cbf815731fcc6e",
+    measurementId: "G-3EZGXX7EE3"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
